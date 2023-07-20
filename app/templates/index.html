@@ -51,10 +51,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="file:///C:/Users/Gaby/Documents/1.-Universidad/Integradora/Prototipos/index/index.html">Contactos&nbsp;</a>
-                    </li><li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle show display-4" href="index.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="true">Iniciar Sesión</a>
-                        <div class="dropdown-menu show" aria-labelledby="dropdown-578" data-bs-popper="none">
-                            <a class="text-black text-primary dropdown-item display-4" href="Administrador\index.html">Administrador</a>
-                            <a class="text-black text-primary dropdown-item display-4" href="Ayudante/index.html">Ayudante</a></div></li></ul>
+                    </li><li class="nav-item dropdown">
+                        <form action="{{ url_for('index') }}" method="post">
+                          <a class="nav-link link text-black text-primary dropdown-toggle show display-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="true">
+                            Iniciar Sesión
+                          </a>
+                          <div class="dropdown-menu show" aria-labelledby="dropdown-578" data-bs-popper="none">
+                            <button type="submit" name="opciones" value="administrador" class="text-black text-primary dropdown-item display-4">Administrador</button>
+                            <a class="text-black text-primary dropdown-item display-4" href="Ayudante/index.html">Ayudante</a>
+                          </div>
+                        </form>
+                      </li>
+                      </div></li></ul>
                 
                 
             </div>
